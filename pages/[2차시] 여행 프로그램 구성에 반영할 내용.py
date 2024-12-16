@@ -6,6 +6,7 @@ import koreanize_matplotlib
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.colors import black, gray
 
 
@@ -84,8 +85,8 @@ def save_to_pdf(questions_and_answers, filename):
 
 
 
-    pdfmetrics.registerFont(TTFont('MalgunGothic', 'C:/Windows/Fonts/malgun.ttf')) 
-    c.setFont('MalgunGothic', 12)
+     pdfmetrics.registerFont(TTFont('NanumGothic', './NanumGothic.ttf'))
+    c.setFont('NanumGothic', 12)
 
 
     c.setStrokeColor(gray) 
