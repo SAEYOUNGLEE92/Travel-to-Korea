@@ -2,9 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-from matplotlib import rc
-
-rc('font', family='Malgun Gothic') 
+import koreanize_matplotlib
 
 plt.rcParams['axes.unicode_minus'] = False
 
