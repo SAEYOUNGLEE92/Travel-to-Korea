@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-import koreanize_matplotlib
+from matplotlib import font_manager, rc
 
 plt.rcParams['axes.unicode_minus'] = False
 
-font_path = './NanumGothic.ttf'
+font_path = 'NanumGothic.ttf'
 font_manager.fontManager.addfont(font_path)
 rc('font', family='NanumGothic')
 
