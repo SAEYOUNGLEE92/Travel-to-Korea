@@ -11,7 +11,7 @@ plt.rcParams['axes.unicode_minus'] = False
 
 
 excel_file = 'visitkoreadata.xlsx'
-xls = pd.ExcelFile(excel_file)
+xls = pd.ExcelFile(excel_file, engine='openpyxl')
 
 
 sheet_names = xls.sheet_names
