@@ -2,14 +2,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-from matplotlib import rc
+import koreanize_matplotlib
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from reportlab.lib.colors import black, gray
 
-rc('font', family='Malgun Gothic')  
 
 plt.rcParams['axes.unicode_minus'] = False
 
