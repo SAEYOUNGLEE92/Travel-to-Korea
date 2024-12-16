@@ -85,7 +85,7 @@ def save_to_pdf(questions_and_answers, filename):
 
 
 
-     pdfmetrics.registerFont(TTFont('NanumGothic', './NanumGothic.ttf'))
+    pdfmetrics.registerFont(TTFont('NanumGothic', './NanumGothic.ttf'))
     c.setFont('NanumGothic', 12)
 
 
