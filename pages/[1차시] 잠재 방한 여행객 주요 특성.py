@@ -7,8 +7,8 @@ import koreanize_matplotlib
 plt.rcParams['axes.unicode_minus'] = False
 
 font_path = './NanumGothic.ttf'
-font_name = font_manager.FontProperties(fname=font_path).get_name()
-rc('font', family=font_name)
+font_manager.fontManager.addfont(font_path)
+rc('font', family='NanumGothic')
 
 
 
